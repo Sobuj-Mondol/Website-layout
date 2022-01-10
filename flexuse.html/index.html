@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexuse-html</title>
+
+    <style>
+        .loging-form{
+            display: flex;
+            flex-direction: column;
+        }
+        .loging-container{
+            display: flex;
+           justify-content: center;
+        }
+        .loging-form input,button{
+            font-size: 1em;
+            margin-top: 10px;
+            padding: 5px;
+            border: 2px solid rgb(212, 211, 211);
+            border-radius: 10px;
+        }
+        button{
+            font-weight: 700;
+            font-size: 20px;
+            background-color: rgb(58, 51, 51);
+            color: khaki;
+            border-radius: 30px;
+            
+        }
+        nav > .span-1 > a{
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            margin-right: 20px;
+            font-size: 20px;
+            background-color: rgb(180, 180, 180);
+            border-radius: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+           
+        }
+        nav > span > a{
+            text-decoration: none;
+            width: 10%;
+            height: 10px;
+            color: #fff;
+            font-weight: 700;
+            padding: 5px 8px;
+            background-color: rgb(104, 104, 104);
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="span-1">
+                <a href="">Home</a>
+                <a href="">custom</a>
+                <a href="">others</a>
+                <a href="">Hero</a>
+            </span>
+            <span>
+                <a href="">Log In</a>
+                <a href="">Log out</a>
+            </span>
+        </nav>
+    </header>
+    <section class="loging-container">
+        <form action="" class="loging-form">
+            <h1>Loging</h1>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <input type="password" name="password" id="password" placeholder=" Your Password" required>
+            <button type="submit">Loging</button>
+        </form>
+    </section>
+</body>
+</html> 
